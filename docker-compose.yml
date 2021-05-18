@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  ansible:
+    # Build the image
+    build:
+      context: .
+      args:
+        ANSIBLE_VERSION: ${ANSIBLE_VERSION}
+    image: lparet/docker-image-ansible:${ANSIBLE_VERSION}
