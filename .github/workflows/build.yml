@@ -29,4 +29,5 @@ jobs:
       env:
         DOCKER_REGISTRY_SECRET: ${{ secrets.DOCKER_REGISTRY_SECRET }}
       run: |
+        echo ${DOCKER_REGISTRY_SECRET} | docker login -u lparet --password-stdin 
         source version.sh && docker-compose push
