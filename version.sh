@@ -1,4 +1,3 @@
-
 #!/bin/sh
 
 # The Ansible version that will be installed in the image
