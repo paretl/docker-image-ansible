@@ -23,6 +23,7 @@ RUN apk --update add --no-cache --virtual .build-deps \
     pip \
     # Install netaddr for Consul role
     netaddr \
+    six \
 # Install Ansible
 && pip3 install \
     ansible==${ANSIBLE_VERSION} \
